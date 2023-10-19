@@ -1,7 +1,8 @@
 
 
-const Greet = ({name,relation})=>
+const Greet = (props)=>
 {
+    const {name,relation} = props;
     return (
         <div>
             <h1>Hello {name} {relation}</h1>
