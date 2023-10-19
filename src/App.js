@@ -14,6 +14,7 @@ function App() {
       <Greet name="Praju" relation="Junior Crush">
         <p>Child Prop after Parju</p>
       </Greet> */}
+      <Greet name="Manasi" relation="Batchelor Crush"/>
       <Message/>
       <Counter/>
     </div>
