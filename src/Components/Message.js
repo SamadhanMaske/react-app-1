@@ -3,25 +3,10 @@ import React, { Component } from "react";
 
 class Message extends Component
 {
-    constructor(){
-        super();
-        this.state={
-            message:"Welcome Visitor",
-        }
-    }
-
-    changeMessage(){
-        this.setState({
-            message:"Thank you for subscribing",
-        });
-    }
-    render()
-    {
-        return(
-            <div>
-                <h1>{this.state.message}</h1>
-                <button onClick={()=>this.changeMessage()}>Subscribe</button>
-            </div>
+    render(){
+        const {name,relation} = this.props;
+        return (
+            <h1>Welcome {name} {relation}</h1>
         )
     }
 }
