@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react'
 
+//rce
 class ClassClick extends Component {
     clickHandler() {
         console.log("Class Click ");
