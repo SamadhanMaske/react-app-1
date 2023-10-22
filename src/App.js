@@ -21,7 +21,7 @@ function App() {
       </Greet> */}
       {/* <Greet name="Manasi" relation="Batchelor Crush"/> */}
       {/* <Message/> */}
-      {/* <Counter/> */}
+      <Counter/>
 
       {/* <FunctionClick/>
       <ClassClick/> */}
