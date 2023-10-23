@@ -8,6 +8,7 @@ import ClassClick from './Components/ClassClick';
 import EventBind from './Components/EventBind';
 import ParentComp from './Components/ParentComp';
 import ConditionalRender from './Components/ConditionalRender';
+import ListRendering from './Components/ListRendering';
 
 function App() {
   return (
@@ -21,15 +22,15 @@ function App() {
       </Greet> */}
       {/* <Greet name="Manasi" relation="Batchelor Crush"/> */}
       {/* <Message/> */}
-      <Counter/>
+      {/* <Counter/> */}
 
       {/* <FunctionClick/>
       <ClassClick/> */}
       {/* <EventBind/> */}
+      {/* <ParentComp/>
+      <ConditionalRender/> */}
 
-      {/* <ParentComp/> */}
-
-      <ConditionalRender/>
+      <ListRendering/>
 
     </div>
   );

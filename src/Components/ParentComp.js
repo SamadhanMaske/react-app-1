@@ -1,28 +1,25 @@
-import React, { Component } from "react";
-import ChildComp from './ChildComp'
+
+import React, { Component } from 'react'
+import ChildComp from './ChildComp';
+
 class ParentComp extends Component {
   constructor(props) {
     super(props);
-
+  
     this.state = {
-      comp: "Parent",
-    };
-
-    this.greetParent = this.greetParent.bind(this);
+       name:'Parent',
+    }
   }
-
-  greetParent() {
-    alert(`Hello ${this.state.comp}`);
+  greetParent = (Child)=>{
+    alert(`Hello ${this.state.name} from ${Child}`)
   }
-
   render() {
     return (
       <div>
-        
-        <ChildComp greetHandler={this.greetParent} />
+        <ChildComp clickHandler={this.greetParent}/>
       </div>
-    );
+    )
   }
 }
 
-export default ParentComp;
+export default ParentComp
