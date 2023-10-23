@@ -9,6 +9,10 @@ import EventBind from './Components/EventBind';
 import ParentComp from './Components/ParentComp';
 import ConditionalRender from './Components/ConditionalRender';
 import ListRendering from './Components/ListRendering';
+import Sylesheet from './Components/Sylesheet';
+import Inline from './Components/Inline';
+import './Components/appStyle.css'
+import styles from './Components/appStyle.module.css';
 
 function App() {
   return (
@@ -23,15 +27,20 @@ function App() {
       {/* <Greet name="Manasi" relation="Batchelor Crush"/> */}
       {/* <Message/> */}
       {/* <Counter/> */}
-
       {/* <FunctionClick/>
       <ClassClick/> */}
       {/* <EventBind/> */}
       {/* <ParentComp/>
       <ConditionalRender/> */}
+      {/* <ListRendering/> */}
+      {/* <Sylesheet primary={true}/> */}
+      
 
-      <ListRendering/>
-
+      <div>
+        <h1 className='error'>Error</h1>
+        <h1 className={styles.success}>Success</h1>
+      </div>
+      <Inline/>
     </div>
   );
 }

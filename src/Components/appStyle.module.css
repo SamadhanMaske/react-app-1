@@ -1,0 +1,5 @@
+/* Advantage of using module is that classes are locally scoped bydefault */
+
+.success{
+    color: green;
+}
